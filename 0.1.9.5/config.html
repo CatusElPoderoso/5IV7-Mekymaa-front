@@ -1,0 +1,44 @@
+<html>
+<head>
+    <!-- js -->
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <html lang="es" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>configuracion</title>
+    </head>
+
+    <body>
+        <h1>Configuracion</h1>
+        <p id="errorTxt"></p>
+        <div>
+            <video id="theVideo" controls autoplay></video>
+            <canvas id="theCanvas"></canvas>
+        </div>
+        <form method="POST" name="formulario" id="formulario">
+          <div id='message'>aqui apareceran las letras que ya registraste</div>
+          <div id="estado">aqui aparecera si se registro la tecla o no</div>
+          <a href=""></a>
+        </form>
+    </body>
+
+</html>
+</body>
+</html>
+
+<script src="{% static 'javaScript/cargarCamara.js' %}"></script>
